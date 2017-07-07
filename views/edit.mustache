@@ -1,3 +1,11 @@
+
+    <head>
+        <meta charset="utf-8">
+        <title>Edit Link</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+    </head>
+<body>
+<div class="main">
 <form action="/edit" method="post">
   {{#allComics}}
   <input type="text" name="title" value="{{title}}">
@@ -10,3 +18,5 @@
   <button type="submit" name="button" value="{{_id}}">Submit</button>
   {{/allComics}}
 </form>
+</div>
+</body>

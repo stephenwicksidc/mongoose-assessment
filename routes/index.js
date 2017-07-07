@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 mongoose.Promise = require("bluebird");
-// mongoose.connect("mongodb://localhost:27017/comics");
+// mongoose.connect("mongodb://localhost:27017/comics") - Checking to see if this is needed here;
 
 const comicSchema = new Schema ({
   title: String,
@@ -38,7 +38,6 @@ router.post('/', function(req, res){
   comic.type.push({genre: req.body.genre, publisher: req.body.publisher});
   console.log(comic.toObject());
   comic.save().then(function(newComic){
-    // console.log(newComic);
     res.redirect("/")
   });
 });
