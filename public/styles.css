@@ -1,0 +1,16 @@
+.main {
+    padding: 100px;
+}
+body {
+    background-color: lightgray;
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/26/17/31/comic-2263121_960_720.jpg);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-size: cover;
+    color: white;
+}
+input {
+    height: 40px;
+}
+button {
+    height: 40px;
+}

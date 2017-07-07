@@ -1,0 +1,24 @@
+<div>
+  <form action="/" method="post">
+    <input type="text" name="title" placeholder="Comic Book Title">
+    <input type="text" name="issue" placeholder="Issue Number">
+    <input type="text" name="author"placeholder="Author">
+    <input type="text" name="genre" placeholder="Genre">
+    <input type="text" name="publisher" placeholder="Publisher">
+    <button type="submit" name="button">Submit</button>
+  </form>
+</div>
+{{#allComics}}
+<p>Comic Book Title: {{title}}</p>
+<p>Issue Number: {{issue}} </p>
+<p>Author: {{author}}</p>
+{{#type}}
+<p>Genre: {{genre}}</p>
+<p>Publisher: {{publisher}}</p>
+{{/type}}
+<form action="/{{_id}}/delete" method="post">
+  <button type="submit">Delete</button>
+</form>
+<p><a href="/{{_id}}/edit">Edit</a></p>
+<hr>
+{{/allComics}}

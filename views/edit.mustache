@@ -1,0 +1,12 @@
+<form action="/edit" method="post">
+  {{#allComics}}
+  <input type="text" name="title" value="{{title}}">
+  <input type="text" name="issue" value="{{issue}}">
+  <input type="text" name="author" value="{{author}}">
+  {{#type}}
+  <input type="text" name="genre" value="{{genre}}">
+  <input type="text" name="publisher" value="{{publisher}}">
+  {{/type}}
+  <button type="submit" name="button" value="{{_id}}">Submit</button>
+  {{/allComics}}
+</form>
